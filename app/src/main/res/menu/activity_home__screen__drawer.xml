@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_search_donor"
+
+            android:title="search donor" />
+        <item
+            android:id="@+id/nav_nearesthospitol"
+
+            android:title="Nearest Hospitol" />
+        <item
+            android:id="@+id/nav_message"
+
+            android:title="Message" />
+        <item
+            android:id="@+id/nav_logout"
+
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>
