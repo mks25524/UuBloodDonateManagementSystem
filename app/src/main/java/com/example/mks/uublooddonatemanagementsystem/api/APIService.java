@@ -1,6 +1,7 @@
 package com.example.mks.uublooddonatemanagementsystem.api;
 
 import com.example.mks.uublooddonatemanagementsystem.model.MessageResponse;
+import com.example.mks.uublooddonatemanagementsystem.model.Messages;
 import com.example.mks.uublooddonatemanagementsystem.model.Result;
 import com.example.mks.uublooddonatemanagementsystem.model.Users;
 
@@ -58,4 +59,7 @@ public interface APIService {
             @Field("city") String city,
             @Field("contactno") String contactno
     );
+    //getting messages
+    @GET("messages/{id}")
+    Call<Messages> getMessages(@Path("id") int id);
 }

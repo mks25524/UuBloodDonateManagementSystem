@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.mks.uublooddonatemanagementsystem.fragment.HomeFragment;
+import com.example.mks.uublooddonatemanagementsystem.fragment.MessageFragment;
 import com.example.mks.uublooddonatemanagementsystem.fragment.profileFragment;
 import com.example.mks.uublooddonatemanagementsystem.helper.SharedPrefManager;
 
@@ -79,7 +80,8 @@ public class Home_Screen_Activity extends AppCompatActivity
             case R.id.nav_nearesthospitol:
                // fragment=new NearestHospitolFragment();
             case R.id.nav_message:
-               // fragment=new MessageFragment();
+               fragment=new MessageFragment();
+                break;
             case R.id.nav_logout:
                 logout();
                 break;
