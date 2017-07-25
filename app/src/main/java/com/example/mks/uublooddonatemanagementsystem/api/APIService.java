@@ -3,9 +3,13 @@ package com.example.mks.uublooddonatemanagementsystem.api;
 import com.example.mks.uublooddonatemanagementsystem.model.MessageResponse;
 import com.example.mks.uublooddonatemanagementsystem.model.Messages;
 import com.example.mks.uublooddonatemanagementsystem.model.Result;
+import com.example.mks.uublooddonatemanagementsystem.model.User;
 import com.example.mks.uublooddonatemanagementsystem.model.Users;
 
+import java.util.List;
+
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -62,4 +66,13 @@ public interface APIService {
     //getting messages
     @GET("messages/{id}")
     Call<Messages> getMessages(@Path("id") int id);
+    //search blood donor
+    @FormUrlEncoded
+    @POST("usersBP")
+    Call<Users> getDonorList(
+            @Field("bloodgroup") String bloodgroup
+    );
+//    @GET("users")
+//    public void getDonors(Callback<List<User >> response);
+
 }

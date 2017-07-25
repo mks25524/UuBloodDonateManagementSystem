@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+
+   >
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -9,9 +11,10 @@
         android:layout_margin="4dp">
 
         <LinearLayout
+            android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
@@ -21,6 +24,21 @@
                 android:layout_weight="2"
                 android:text="Keya"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/textViewBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="bloodgroup"
+
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="city"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             <ImageButton
                 android:id="@+id/imageButtonMessage"
@@ -29,6 +47,32 @@
                 android:background="@drawable/send_message" />
 
         </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/layout1"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:id="@+id/textViewBloodGroup"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="bloodgroup"-->
+
+                <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/textViewCity"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="city"-->
+                <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />-->
+        <!--</LinearLayout>-->
+
+
+
+
+
 
 
     </android.support.v7.widget.CardView>

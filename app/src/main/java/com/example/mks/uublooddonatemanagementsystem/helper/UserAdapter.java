@@ -54,6 +54,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         final User user = users.get(position);
         holder.textViewName.setText(user.getName());
 
+        holder.textViewCity.setText(user.getCity());
+        holder.textViewBloodGroup.setText(user.getBloodGroup());
+
         //code for sending message
         holder.imageButtonMessage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,12 +138,16 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView textViewName;
-        public ImageButton imageButtonMessage;
 
+        public TextView textViewBloodGroup;
+        public TextView textViewCity;
+        public ImageButton imageButtonMessage;
         public ViewHolder(View itemView) {
             super(itemView);
 
             textViewName = (TextView) itemView.findViewById(R.id.textViewName);
+            textViewBloodGroup = (TextView) itemView.findViewById(R.id.textViewBloodGroup);
+            textViewCity = (TextView) itemView.findViewById(R.id.textViewCity);
             imageButtonMessage = (ImageButton) itemView.findViewById(R.id.imageButtonMessage);
         }
     }

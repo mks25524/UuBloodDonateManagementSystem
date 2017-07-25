@@ -67,6 +67,7 @@ public class Home_Screen_Activity extends AppCompatActivity
     }
     private void displaySelectedScreen(int itemId){
         Fragment fragment=null;
+        Intent intent=null;
         switch (itemId){
             case R.id.nav_home:
                fragment=new HomeFragment();
@@ -75,7 +76,8 @@ public class Home_Screen_Activity extends AppCompatActivity
              fragment=new profileFragment();
                 break;
             case R.id.nav_search_donor:
-               // fragment=new DonorSearchFragment();
+            // intent=new Intent(this,Serach_Donor_List.class);
+               // startActivity(intent);
                 break;
             case R.id.nav_nearesthospitol:
                // fragment=new NearestHospitolFragment();
@@ -86,6 +88,7 @@ public class Home_Screen_Activity extends AppCompatActivity
                 logout();
                 break;
         }
+
         //replacing the fragment
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
